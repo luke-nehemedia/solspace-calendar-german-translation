@@ -3,6 +3,9 @@
 /**
  *  German translation by Lucas Bares <luke@nehemdia.de>
  *  http://luke.nehemedia.de
+ *
+ *  @version 1.1
+ *  @last_edit 2017-03-17
  */
 
 $plugin = array(
@@ -37,11 +40,11 @@ $widgets = array(
     'Title'                                                       => 'Titel',
     'Customise the widget title. Leave blank for default.'        => 'Widget Titel anpassen. Für den Standardwert leer lassen.',
     'Calendars'                                                   => 'Kalender',
-    'Which calendar entries do you wish to show?'                 => 'Aus welchem Kalender wollen Sie Ereignisse anzeigen?',
+    'Which calendar entries do you wish to show?'                 => 'Welche Kalendereinträge wollen Sie sehen?',
 
     // Agenda
     'Calendar View'                                               => 'Kalenderansicht',
-    'Choose which type of calendar view to assign to this widget' => 'Wählen Sie eine Kalenderansicht aus, die sie mit diesem Widget verwenden wollen.',
+    'Choose which type of calendar view to assign to this widget' => 'Wählen Sie eine Kalenderansicht aus, die Sie mit diesem Widget verwenden wollen.',
 
     'Calendar Agenda' => 'Kalender Agenda',
     'Quick Event'     => 'Schnelleintrag',
@@ -91,7 +94,7 @@ $events = array(
     'Never ends' => 'Niemals aufhörend',
     'On date'    => 'Am Datum',
     'After'      => 'Nach',
-    'times'      => 'Malen',
+    'times'      => 'Mal',
 
     'Start Date' => 'Anfangsdatum',
     'End Date'   => 'Enddatum',
@@ -103,7 +106,7 @@ $events = array(
     'Save'   => 'Speicher',
     'Edit'   => 'Bearbeiten',
     'Cancel' => 'Abbrechen',
-    'Limit'  => 'Begrenzung',
+    'Limit'  => 'Begrenzen',
 
     'Delete'                                      => 'Löschen',
     'Are you sure you want to delete this event?' => 'Wollen Sie dieses Ereignis wirklich löschen?',
@@ -129,8 +132,8 @@ $events = array(
     'Slug already exists'                      => 'Der angegebene Slug existiert bereits.',
     'Event could not be found'                 => 'Ereignis konnte nicht gefunden werden.',
     'Could not find an Event with ID {id}'     => 'Das Ereignis mit der ID {id} konnte nicht gefunden werden.',
-    'End repeat date must be specified'        => 'Ein Enddatum für die Wiederholungen muss angegeben werden.',
-    'End repeat count must be specified'       => 'Die maximale Anzahl an Wiederholungen muss angegeben werden.',
+    'End repeat date must be specified'        => 'Es muss ein Enddatum für die Wiederholungen angegeben werden.',
+    'End repeat count must be specified'       => 'Die Anzahl an Wiederholungen muss angegeben werden.',
     'Event interval must be a positive number' => 'Das Interval muss eine positive Nummer sein.',
     'Event repeat rules not specified'         => 'Es wurden keine Regeln für die Wiederholung angegeben.',
 
@@ -163,7 +166,7 @@ $calendars = array(
     'Calendar saved.'                                      => 'Kalender gespeichert.',
     'Couldn’t save calendar.'                              => 'Kalender konnte nicht gespeichert werden.',
     'Calendar with a handle "{handle}" could not be found' => 'Der Kalender mit dem Kurznamen "{handle}" wurde nicht gefunden.',
-    'No calendar exists with the ID "{id}"'                => 'Es existiert kein Kalender mit der ID "{id}"',
+    'No calendar exists with the ID "{id}"'                => 'Es existiert kein Kalender mit der ID "{id}."',
 
     'ICS sharing'         => 'ICS Teilen',
     'Copy link'           => 'Link kopieren',
@@ -192,11 +195,11 @@ $demoTemplates = array(
 
 $settings = array(
     'Date Overlap Threshold'                                                                                                                                                                                          => 'Datums Überlappungsgrenze',
-    'Specify the amount of hours in the next day which are still considered as those of the previous day. This prevents late night events from showing up the next day for calendars in control panel and front end.' => 'Geben Sie die Anzahl Stunden an, die ein Ereignis noch zum Vortag gerechnet werden soll. Dies verhindert, dass bis in die Nacht gehende Ereignisse auch am nächsten Tag im Kontrollzentrum angezeigt werden.',
+    'Specify the amount of hours in the next day which are still considered as those of the previous day. This prevents late night events from showing up the next day for calendars in control panel and front end.' => 'Geben Sie die Anzahl der Stunden an, die noch zum Vortag gerechnet werden sollen. Dies verhindert, dass nächtliche Ereignisse auch am nächsten Tag im Kontrollzentrum angezeigt werden.',
     'Time Interval'                                                                                                                                                                                                   => 'Zeitintervall',
     'The time picker interval for fieldtype, in minutes. The Start Time and End Time field time pickers will contain a list of times of the day by this interval.'                                                    => 'Das Zeitintervall in Minuten, mit dem Anfangs- und Endzeit im Auswahlfeld festgelegt werden können. Das Auswahlfeld enthält eine Liste der Uhrzeiten in diesem Intervall.',
     'Default Event Duration'                                                                                                                                                                                          => 'Standard Ereignislänge',
-    'The default event time duration for fieldtype, in minutes. When event Start Time is selected, this number of minutes will automatically be added to that time for End Time field.'                               => 'Die Standardlänge eines neuen Ereignisses. Für die Endzeit des Ereignisses wird der Startzeit diese Anzahl Minuten hinzuaddiert.',
+    'The default event time duration for fieldtype, in minutes. When event Start Time is selected, this number of minutes will automatically be added to that time for End Time field.'                               => 'Die Standardlänge eines neuen Ereignisses. Für die Endzeit des Ereignisses wird der Startzeit diese Anzahl an Minuten hinzuaddiert.',
     'Select "All Day" by default?'                                                                                                                                                                                    => 'Neue Ereignisse standardmäßig ganztägig anlegen?',
     'When enabled, when creating new events the \'All Day\' option will be selected by default.'                                                                                                                      => 'Wenn aktiviert werden neue Ereignisse automatisch als "ganztägig" angelegt.',
     'ICS Description field'                                                                                                                                                                                           => 'ICS Beschreibungsfeld',
@@ -204,18 +207,18 @@ $settings = array(
     'ICS Location field'                                                                                                                                                                                              => 'ICS Ortsfeld',
     'Set the field to be used for event location when exporting ICS file.'                                                                                                                                            => 'Definiert das Feld, das als Ereignisort für die ICS-Datei verwendet werden soll.',
     'License key'                                                                                                                                                                                                     => 'Lizenzschlüssel',
-    'Enter your Calendar license key here.'                                                                                                                                                                           => 'Geben Sie Ihren Calendar-Lizenzschlüssel hier an',
+    'Enter your Calendar license key here.'                                                                                                                                                                           => 'Geben Sie Ihren Calendar-Lizenzschlüssel hier an.',
     'Hide \'Install Demo\' alert message?'                                                                                                                                                                            => '\'Demo Installieren\'-Hinweis verbergen?',
-    'Hides the alert message suggesting to install demo templates when this setting is enabled.'                                                                                                                      => 'Blendet den Hinweis auf die Demo-Templates aus.',
+    'Hides the alert message suggesting to install demo templates when this setting is enabled.'                                                                                                                      => 'Blendet den Hinweis für die Demo-Templates aus.',
     'None'                                                                                                                                                                                                            => 'Keine',
     'Display Mini Calendar & Calendars list in Month/Week/Day views?'                                                                                                                                                 => 'Mini-Kalender & Kalenderliste Monats-/Wochen-/Tagesansicht anzeigen?',
     'Displays a side menu with mini calendar and list of calendars, allowing you to filter your event results.'                                                                                                       => 'Zeigt ein seitliches Menü mit dem Mini-Kalender und einer Liste aller Kalender an, mit der Ereignisse gefiltert werden können.',
     'Include Disabled Events in Month/Week/Day views?'                                                                                                                                                                => 'Deaktivierte Ereignisse in Monats-/Wochen-/Tagesansicht anzeigen?',
     'Events that are disabled will be displayed in the views with faded styles.'                                                                                                                                      => 'Deaktivierte Ereignisse werden mit einem ausgegrautem Stil angezeigt.',
     'Default View'                                                                                                                                                                                                    => 'Standardansicht',
-    'The default page to go to when clicking the Calendar nav item.'                                                                                                                                                  => 'Die Standardansicht wenn im Menü auf den Kalendereintrag geklickt wird.',
+    'The default page to go to when clicking the Calendar nav item.'                                                                                                                                                  => 'Die Standardansicht, wenn im Menü auf den Kalendereintrag geklickt wird.',
     'Allow new events to be created in Month/Week/Day views?'                                                                                                                                                         => 'Das Erstellen neuer Ereignisse in der Monats-/Wochen-/Tagesansicht zulassen?',
-    'Allows all users with event creation privileges to use the Quick Create event feature.'                                                                                                                          => 'Autorisierten Benutzern die Verwendung der Schnelleintrags-Funktion erlauben?',
+    'Allows all users with event creation privileges to use the Quick Create event feature.'                                                                                                                          => 'Erlaubt autorisierten Benutzern die Verwendung der Schnelleintrags-Funktion.',
     'You don’t have permission to access Calendar Settings.'                                                                                                                                                          => 'Sie sind nicht berechtigt die Einstellungen anzuzeigen.',
 
     'License'          => 'Lizenz',
@@ -231,7 +234,7 @@ $settings = array(
 $permissions = array(
     '"{name}" calendar'      => '"{name}" Kalender',
     'Administrate Calendars' => 'Kalender verwalten',
-    'Manage events in'       => 'Ereignisse verwalten in ',
+    'Manage events in'       => 'Ereignisse verwalten in',
     'Create Calendars'       => 'Kalender erstellen',
     'Edit Calendars'         => 'Kalender editieren',
     'Delete Calendars'       => 'Kalender löschen',
